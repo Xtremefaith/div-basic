@@ -197,6 +197,7 @@ NAVIGATION STYLES
 								float: right;
 								input{
 									width: 100%;
+									padding: 10px;
 								}
 							}
 							#mobile-search-submit{
@@ -218,6 +219,7 @@ NAVIGATION STYLES
 					li{
 						a{
 							background-color: $contrast-dk;
+							padding: 15px 10px;
 							&:hover,&:active{
 								background-color: $contrast-lt;
 							}
