@@ -94,6 +94,13 @@ $heavy:				"OpenSansSemibold", "Helvetica Neue", Arial, sans-serif;
 	// }
 
 /*********************
+THEME SPRITE
+*********************/	
+@mixin sprite($posX, $posY){
+	background: url(../images/sprite.png) $posX $posY no-repeat transparent;
+}
+
+/*********************
 TRANISTION
 *********************/
 @mixin transition($transition...) {
