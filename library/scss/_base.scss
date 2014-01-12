@@ -216,12 +216,15 @@ NAVIGATION STYLES
 					}
 				}
 				#mobile{
-					li{
-						a{
-							background-color: $contrast-dk;
-							padding: 15px 10px;
-							&:hover,&:active{
-								background-color: $contrast-lt;
+					ul{
+						margin-bottom: 10px;
+						li{
+							a{
+								background-color: $contrast-dk;
+								padding: 15px 10px;
+								&:hover,&:active{
+									background-color: $contrast-lt;
+								}
 							}
 						}
 					}
