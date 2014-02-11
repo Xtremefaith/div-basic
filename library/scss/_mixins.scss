@@ -1,85 +1,93 @@
 /******************************************************************
-Site Name: Theme Name
+Site Name: DIV BASIC
 Stylesheet: Mixins & Constants Stylesheet
 ******************************************************************/
 
 /*********************
-COLORS
-Need help w/ choosing your colors? Try this site out:
-http://0to255.com/
+ * THEME COLORS
 *********************/
-$alert-yellow:      #ebe16f;
-$alert-red:         #fbe3e4;
-$alert-green:       #e6efc2;
-$alert-blue:        #d5edf8;
 
-/* Color Base Setup (change as necessary per project) */
-$contrast_percent: 10%;
+/* Base Colors */
+$white:		#fff;
+$black:		#000;
+$grey:		#808080;
 
-$black:             #000;
-	$lt-black:		lighten($black,$contrast_percent);
-	$dk-black:		darken($black,$contrast_percent);
-$white:             #fff;
-	$lt-white:		lighten($white,$contrast_percent);
-	$dk-white:		darken($white,$contrast_percent);
-$grey:				#808080;
-	$lt-grey:		lighten($grey,$contrast_percent);
-	$dk-grey:		darken($grey,$contrast_percent);
-$red:				#FF0000;
-	$lt-red:		lighten($red,$contrast_percent);
-	$dk-red:		darken($red,$contrast_percent);
-$blue: 				#0000FF;
-	$lt-blue:		lighten($blue,$contrast_percent);
-	$dk-blue:		darken($blue,$contrast_percent);
-$yellow: 			#FFFF00;
-	$lt-yellow:		lighten($yellow,$contrast_percent);
-	$dk-yellow:		darken($yellow,$contrast_percent);
-$green: 			#00FF00;
-	$lt-green:		lighten($green,$contrast_percent);
-	$dk-green:		darken($green,$contrast_percent);
-$orange: 			#FF8000;
-	$lt-orange:		lighten($orange,$contrast_percent);
-	$dk-orange:		darken($orange,$contrast_percent);
-$purple: 			#400040;
-	$lt-purple:		lighten($purple,$contrast_percent);
-	$dk-purple:		darken($purple,$contrast_percent);
-$pink: 				#FF0080;
-	$lt-pink:		lighten($pink,$contrast_percent);
-	$dk-pink:		darken($pink,$contrast_percent);
+/* Theme Colors */
+$link-color: #da2c2c;
+	$link-color-dk: darken($link-color,10%);
+	$link-color-lt: lighten($link-color,10%);
+	$link-hover: $link-color-lt;
+$primary: #da2c2c;
+	$primary-dk: darken($primary,10%);
+	$primary-lt: lighten($primary,10%);
+$accent: #333;
+	$accent-dk: darken($accent,10%);
+	$accent-lt: lighten($accent,10%);
 
-/* Theme Color Palette */
-$base-color:		#e31b23;				
-$base-lt:			#e7767a;				
-$base-dk:			#ba161d;				
-$accent:			#1D1D1D;				
-$accent-lt:			#777777;				
-$accent-dk:			$black;					
-$contrast:			#DA2C2C;				
-$contrast-lt:		lighten($contrast, 10%);
-$contrast-dk:		darken($contrast, 10%);	
-$neutral:			#ecf2b7;				
-$neutral-lt:		#ece9d3;				
-$neutral-med:		#d9d1a9;				
-$neutral-dk:		#b2ad8a; 				
+$nav-bgr: $primary;
+$nav-hover-bgr: $primary-lt;
+$nav-current-bgr: $primary-dk;
 
-$bgr:				$white;					 
-$link-color:        $contrast;
-$link-hover:        darken($link-color, 9%);
-$text-color:		$accent;
-$nav-bgr:           $contrast;
-$nav-hover-bgr:     $contrast-lt;
-$nav-current-bgr:   $neutral-lt;
-$nav-current-color: $link-hover;
+	/* Text backgrounds */
+	.text-bg {
+		width: auto;
+		display: inline-block;
+		padding: 5px 7px 6px 8px;
+		background: $link-color;
+		margin: 2px;
+	}
+
+	.text-bg.white {
+		background: $white;
+	}
+	.text-bg.black {
+		background: $black;
+	}
+
+	.text-bg.primary {
+		background: $primary;
+	}
+
+	.text-bg.accent {
+		background: $accent;
+	}
+
+	.text-bg.link {
+		background: $link-color;
+	}
+
+	/* Text Color */
+	.text-color {
+		color: $link-color;
+	}
+
+	.text-color.white {
+		color: $white;
+	}
+	.text-color.black {
+		color: $black;
+	}
+
+	.text-color.primary {
+		color: $primary;
+	}
+
+	.text-color.accent {
+		color: $accent;
+	}
+
+	.text-color.link {
+		color: $link-color;
+	}
 
 /*********************
 TYPOGRAPHY
 *********************/
-$sans-serif:        "OpenSansLight", "Helvetica Neue", Arial, sans-serif;
-$serif:             "Georgia", Cambria, "Times New Roman", Times, serif;
-$fancy: 			"Crushed", "OpenSansLightItalic", "Helvetica Neue", sans-serif;
-$heavy:				"OpenSansSemibold", "Helvetica Neue", Arial, sans-serif;
+$sans-serif:       	'Open Sans', Helvetica, Arial, sans-serif;
+$serif:          	'Volkhov', 'Times New Roman', Georgia, serif;
 
-	// @import url(http://fonts.googleapis.com/css?family=Crushed);
+	@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800);
+	@import url(http://fonts.googleapis.com/css?family=Volkhov:400,400italic);
 
 	// @font-face {
 	//     font-family: 'OpenSansLight';
@@ -92,6 +100,28 @@ $heavy:				"OpenSansSemibold", "Helvetica Neue", Arial, sans-serif;
 	//     font-style: normal;
 	
 	// }
+
+/*********************
+ * THEME SPRITE
+ * @include sprite(0,0);
+ *********************/
+@mixin sprite($posX, $posY){
+	background: url(../images/sprite.png) $posX $posY no-repeat transparent;
+}
+
+@mixin mobileSprite($posX, $posY){
+	background: url(../images/mobile-sprite.png) $posX $posY no-repeat transparent;
+}
+
+/*********************
+ * RESPONSIVE IMAGES
+ * @include responsive();
+ *********************/
+@mixin responsive() {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
 
 /*********************
 TRANISTION
@@ -135,11 +165,11 @@ CSS3 BOX SHADOW
 }
 
 /*********************
-BOX SIZING
+ * BOX SIZING
+ * @include box-sizing(border-box);
+ * NOTE: value of "padding-box" is only supported in Gecko. So
+probably best not to use it. I mean, were you going to anyway?
 *********************/
-/* @include box-sizing(border-box); */
-/* NOTE: value of "padding-box" is only supported in Gecko. So
-probably best not to use it. I mean, were you going to anyway? */
 @mixin box-sizing($type: border-box) {
 	-webkit-box-sizing: $type;
 	-moz-box-sizing:    $type;
