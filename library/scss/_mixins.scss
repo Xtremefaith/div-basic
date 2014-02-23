@@ -13,16 +13,16 @@ $black:		#000;
 $grey:		#808080;
 
 /* Theme Colors */
-$link-color: #da2c2c;
-	$link-color-dk: darken($link-color,10%);
-	$link-color-lt: lighten($link-color,10%);
-	$link-hover: $link-color-lt;
 $primary: #da2c2c;
 	$primary-dk: darken($primary,10%);
 	$primary-lt: lighten($primary,10%);
 $accent: #333;
 	$accent-dk: darken($accent,10%);
 	$accent-lt: lighten($accent,10%);
+$link-color: #da2c2c;
+	$link-color-dk: darken($link-color,10%);
+	$link-color-lt: lighten($link-color,10%);
+	$link-hover: $link-color-lt;
 
 $nav-bgr: $primary;
 $nav-hover-bgr: $primary-lt;
@@ -32,9 +32,8 @@ $nav-current-bgr: $primary-dk;
 	.text-bg {
 		width: auto;
 		display: inline-block;
-		padding: 5px 7px 6px 8px;
+		padding: 5px;
 		background: $link-color;
-		margin: 2px;
 	}
 
 	.text-bg.white {
@@ -109,8 +108,11 @@ $serif:          	'Volkhov', 'Times New Roman', Georgia, serif;
 	background: url(../images/sprite.png) $posX $posY no-repeat transparent;
 }
 
+/* WARNING: IF sprite image is made for retina */
 @mixin mobileSprite($posX, $posY){
-	background: url(../images/mobile-sprite.png) $posX $posY no-repeat transparent;
+	background: url(../images/sprite.png) $posX $posY no-repeat transparent;
+	/* This should be half the size of the sprite.png's original size */
+	background-size: 250px; 
 }
 
 /*********************
