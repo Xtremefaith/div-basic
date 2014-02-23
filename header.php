@@ -38,11 +38,11 @@
 			
 			<header class="header" role="banner">
 
-				<?php get_template_part('header','mobile-menu') ?>
+				<?php get_template_part('inc/header','mobile-menu') ?>
 				
 				<div id="inner-header" class="wrap clearfix">
 					
-					<?php get_template_part('header','default-titlespace') ?>
+					<?php get_template_part('inc/header','titlespace') ?>
 					
 					<nav id="full" class="full" role="navigation">
 						<?php div_starter_main_nav(); ?>

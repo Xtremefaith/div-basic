@@ -22,21 +22,11 @@
 							    </header> <!-- end article header -->
 					
 							    <section class="entry-content clearfix">
-									<?php if ($counter > 1): ?>
-										<?php if (has_post_thumbnail()): ?>
-											<div class="pad-left-200"><?php the_excerpt(); ?></div>
-										<?php else : ?>
-											<?php the_excerpt(); ?>
-										<?php endif; ?>
-									<?php elseif ($counter == 1): ?>
-								    	<?php the_content(); ?>
-								    	<hr>
-									<?php endif; ?>
+								    <?php the_content(); ?>
 							    </section> <!-- end article section -->
 						
 							    <footer class="article-footer">
 	    							<p class="tags"><?php the_tags('<span class="tags-title">' . __('Tags:', 'divtruth') . '</span> ', ', ', ''); ?></p>
-
 							    </footer> <!-- end article footer -->
 						    
 					    </article> <!-- end article -->
