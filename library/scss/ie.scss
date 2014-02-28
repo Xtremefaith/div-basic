@@ -1,7 +1,5 @@
 /******************************************************************
-Site Name: 
-Author: 
-
+Site Name: Div Basic
 Stylesheet: IE Stylesheet
 
 So instead of using the respond.js file to add media query support
@@ -18,7 +16,8 @@ understand (what's inside the media queries). We also need to
 import the mixins file so SASS can understand the variables.
 */
 
-/* import mixins */
+@import "../../../div-starter/library/scss/mixins"; /* import DIV STARTER mixins */
+
 @import "mixins";
 @import "base";
 @import "480up";
