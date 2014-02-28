@@ -28,56 +28,7 @@ $nav-bgr: $primary;
 $nav-hover-bgr: $primary-lt;
 $nav-current-bgr: $primary-dk;
 
-	/* Text backgrounds */
-	.text-bg {
-		width: auto;
-		display: inline-block;
-		padding: 5px;
-		background: $link-color;
-	}
-
-	.text-bg.white {
-		background: $white;
-	}
-	.text-bg.black {
-		background: $black;
-	}
-
-	.text-bg.primary {
-		background: $primary;
-	}
-
-	.text-bg.accent {
-		background: $accent;
-	}
-
-	.text-bg.link {
-		background: $link-color;
-	}
-
-	/* Text Color */
-	.text-color {
-		color: $link-color;
-	}
-
-	.text-color.white {
-		color: $white;
-	}
-	.text-color.black {
-		color: $black;
-	}
-
-	.text-color.primary {
-		color: $primary;
-	}
-
-	.text-color.accent {
-		color: $accent;
-	}
-
-	.text-color.link {
-		color: $link-color;
-	}
+	
 
 /*********************
 TYPOGRAPHY

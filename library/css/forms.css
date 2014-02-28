@@ -1,0 +1,73 @@
+/*
+Syntax error: Undefined variable: "$sans-serif".
+        on line 8 of scss/forms.scss
+
+3: Stylesheet: Forms Stylesheet
+4: ******************************************************************\/
+5: 
+6: form{
+7: 	font:{
+8: 		family: $sans-serif;
+9: 		size: 12px;
+10: 	}
+11: 	input{
+12: 		padding: 5px 10px;
+13: 
+
+Backtrace:
+scss/forms.scss:8
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/script/variable.rb:49:in `_perform'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/script/node.rb:40:in `perform'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:300:in `visit_prop'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:7:in `visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/root_node.rb:20:in `render'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/engine.rb:315:in `_render'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/engine.rb:262:in `render'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:201:in `each'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:283:in `block in watch'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$sans-serif\".\A         on line 8 of scss/forms.scss\A \A 3: Stylesheet: Forms Stylesheet\A 4: ******************************************************************/\A 5: \A 6: form{\A 7: 	font:{\A 8: 		family: $sans-serif;\A 9: 		size: 12px;\A 10: 	}\A 11: 	input{\A 12: 		padding: 5px 10px;\A 13: "; }

@@ -194,11 +194,11 @@ SIDEBARS & ASIDES
 FOOTER STYLES
 *********************/
 .footer {
-	
+	background: $primary;
 	#inner-footer {
-		background: $primary;
+		
 		a {
-			color: $link-color-lt;	
+			color: $link-color-dk;	
 		}
 	}
 }

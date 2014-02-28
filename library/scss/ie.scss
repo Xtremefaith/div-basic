@@ -20,12 +20,13 @@ import the mixins file so SASS can understand the variables.
 
 /* import mixins */
 @import "mixins";
-@import "normalize";
 @import "base";
-@import "481up";
-@import "768up";
-@import "768up-navIE";
-@import "1030up";
+@import "480up";
+@import "767up";
+@import "767up-navIE";
+@import "1024up";
+@import "1174up";
+@import "1400up";
 
 /* 
 you can call the larger styles if you want, but there's really no need 
